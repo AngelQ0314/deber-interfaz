@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-deber3',
@@ -12,5 +13,11 @@ import { ButtonModule } from 'primeng/button';
   styleUrl: './deber3.component.scss'
 })
 export class Deber3Component {
+
+      constructor(private router: Router){}
+  
+      redirigir(){
+        this.router.navigate([''])
+      }
 
 }

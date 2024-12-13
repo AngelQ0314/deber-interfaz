@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-deber2',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './deber2.component.scss'
 })
 export class Deber2Component {
-
+      constructor(private router: Router){}
+  
+      redirigir(){
+        this.router.navigate([''])
+      }
 }
